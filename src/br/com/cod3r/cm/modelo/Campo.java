@@ -72,10 +72,18 @@ public class Campo {
 	void minar() {
 		minado = true;
 	}
- 	
+	
+	public boolean isMinado() {
+		return minado;
+	}
+  	
 	// Esse metodo pode ser publico, pois ele nao faz nenhuma alteracao no objeto
 	public boolean isMarcado() {
 		return marcado;
+	}
+	
+	void setAberto(boolean aberto) {
+		this.aberto = aberto;
 	}
 	
 	public boolean isAberto() {
